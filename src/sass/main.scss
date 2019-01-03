@@ -5,7 +5,7 @@ body {
 }
 
 .column {
-    padding: 3%;
+    padding: 2%;
     border-right: 1px solid #EEEEEE;
     display: flex;
     flex-direction: column;
@@ -22,6 +22,7 @@ h6 {
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     letter-spacing: .15em;
+    margin: 0;
 }
 
 ul {
@@ -33,13 +34,14 @@ ul {
 .post-container {
     width: 100%;
     border-bottom: 1px solid #EEEEEE;
-    padding-bottom: 40px;
+    padding: 22px 0;
 }
 
 .head {
     font-family: 'EB Garamond', serif;
     font-size: 1em;
     margin: 8px 8px 8px 0;
+    font-weight: 500;
 }
 
 .deck {
@@ -167,6 +169,7 @@ main {
 
         h6 {
             text-align: center;
+            margin-bottom: 8px;
         }
 
         p {
