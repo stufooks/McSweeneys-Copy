@@ -92,7 +92,7 @@ body {
         justify-content: center;
         align-items: center;
 
-        h6 {
+        h5 {
             text-align: center;
         }
     }
@@ -104,16 +104,51 @@ main {
         background-color: #DEF5F3;
         padding: 15px;
         border-top: 1px solid #EEEEEE;
-
-        h6 {
-            text-align: center;
-            color: #9E9E9E;
-        }
+        border-bottom: 1px solid #EEEEEE;
 
         p {
             text-align: center;
         }
     }
+
+    .articles-container {
+        display: flex;
+
+        .left-column-container {
+            text-align: center;
+            padding: 15px;
+            border-right: 1px solid #EEEEEE;
+            width: 27.5%;
+        }
+
+        .middle-column-container {
+            text-align: center;
+            padding: 15px;
+            border-right: 1px solid #EEEEEE;
+            width: 45%;
+
+            a {
+                color: black;
+            }
+        }
+
+        .right-column-container {
+            text-align: center;
+            padding: 15px;
+            width: 27.5%;
+        }
+    }
+}
+
+h6 {
+    text-align: center;
+    color: #9E9E9E;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 #last {
