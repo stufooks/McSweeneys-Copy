@@ -9524,10 +9524,15 @@ body {
   align-items: center;
 }
 
+a {
+  color: black;
+}
+
 h6 {
   color: #9E9E9E;
   font-family: "Lato", sans-serif;
   font-size: 12px;
+  letter-spacing: 0.15em;
 }
 
 ul {
@@ -9540,6 +9545,28 @@ ul {
   width: 100%;
   border-bottom: 1px solid #EEEEEE;
   padding-bottom: 40px;
+}
+
+.head {
+  font-family: "EB Garamond", serif;
+  font-size: 1em;
+  margin: 8px 8px 8px 0;
+}
+
+.deck {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+}
+
+.byline {
+  font-family: "EB Garamond", serif;
+  letter-spacing: 0.075em;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+span {
+  font-style: italic;
 }
 
 .desktop-nav {
@@ -9608,7 +9635,7 @@ ul {
 .masthead .logo-container .logo-text, .masthead .logo-container .logo-caption {
   font-family: "EB Garamond", serif;
   color: black;
-  letter-spacing: 18px;
+  letter-spacing: 17px;
 }
 .masthead .logo-container .logo-caption {
   font-size: 9px;
@@ -9634,17 +9661,23 @@ main .breaking-news-container {
   border-top: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
 }
-main .breaking-news-container p {
-  text-align: center;
-}
 main .breaking-news-container h6 {
   text-align: center;
+}
+main .breaking-news-container p {
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-weight: bold;
+}
+main .breaking-news-container p a {
+  color: #0091EA;
 }
 main .articles-container {
   display: flex;
 }
 main .articles-container .left-column-container {
-  width: 27.5%;
+  width: 23.2%;
 }
 main .articles-container .left-column-container .inner-container {
   width: 100%;
@@ -9653,8 +9686,13 @@ main .articles-container .left-column-container .inner-container {
   justify-content: flex-start;
   align-items: flex-start;
 }
+main .articles-container .left-column-container .inner-container .head {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  font-weight: 600;
+}
 main .articles-container .middle-column-container {
-  width: 45%;
+  width: 53.6%;
 }
 main .articles-container .middle-column-container .inner-container {
   width: 100%;
@@ -9664,11 +9702,20 @@ main .articles-container .middle-column-container .inner-container {
   align-items: center;
 }
 main .articles-container .middle-column-container .inner-container a {
-  color: black;
   text-align: center;
 }
+main .articles-container .middle-column-container .inner-container a .head {
+  font-size: 30px;
+  letter-spacing: 0.15em;
+  line-height: 1.1em;
+  margin: 20px;
+}
+main .articles-container .middle-column-container .inner-container a .deck {
+  font-size: 23px;
+  margin: 14px;
+}
 main .articles-container .right-column-container {
-  width: 27.5%;
+  width: 23.2%;
   border: none;
 }
 main .articles-container .right-column-container .inner-container {
