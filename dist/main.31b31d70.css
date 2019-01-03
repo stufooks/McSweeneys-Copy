@@ -9515,6 +9515,33 @@ body {
   margin: 0;
 }
 
+.column {
+  padding: 3%;
+  border-right: 1px solid #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h6 {
+  color: #9E9E9E;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-container {
+  width: 100%;
+  border-bottom: 1px solid #EEEEEE;
+  padding-bottom: 40px;
+}
+
 .desktop-nav {
   width: 100%;
   display: flex;
@@ -9605,39 +9632,47 @@ main .breaking-news-container {
 main .breaking-news-container p {
   text-align: center;
 }
+main .breaking-news-container h6 {
+  text-align: center;
+}
 main .articles-container {
   display: flex;
 }
 main .articles-container .left-column-container {
-  text-align: center;
-  padding: 15px;
-  border-right: 1px solid #EEEEEE;
   width: 27.5%;
+}
+main .articles-container .left-column-container .inner-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 main .articles-container .middle-column-container {
-  text-align: center;
-  padding: 15px;
-  border-right: 1px solid #EEEEEE;
   width: 45%;
 }
-main .articles-container .middle-column-container a {
+main .articles-container .middle-column-container .inner-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .articles-container .middle-column-container .inner-container a {
   color: black;
+  text-align: center;
 }
 main .articles-container .right-column-container {
-  text-align: center;
-  padding: 15px;
   width: 27.5%;
+  border: none;
 }
-
-h6 {
-  text-align: center;
-  color: #9E9E9E;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+main .articles-container .right-column-container .inner-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
 }
 
 #last {

@@ -4,6 +4,33 @@ body {
     margin: 0;
 }
 
+.column {
+    padding: 3%;
+    border-right: 1px solid #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h6 {
+    color: #9E9E9E;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.post-container {
+    width: 100%;
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 40px;
+}
+
 .desktop-nav {
     width: 100%;
     display: flex;
@@ -109,46 +136,57 @@ main {
         p {
             text-align: center;
         }
+
+        h6 {
+            text-align: center;
+        }
     }
 
     .articles-container {
         display: flex;
 
         .left-column-container {
-            text-align: center;
-            padding: 15px;
-            border-right: 1px solid #EEEEEE;
             width: 27.5%;
-        }
 
-        .middle-column-container {
-            text-align: center;
-            padding: 15px;
-            border-right: 1px solid #EEEEEE;
-            width: 45%;
-
-            a {
-                color: black;
+            .inner-container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
             }
         }
 
+        .middle-column-container {
+            width: 45%;
+
+            .inner-container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+
+                a {
+                    color: black;
+                    text-align: center;
+                }
+            }
+        }
         .right-column-container {
-            text-align: center;
-            padding: 15px;
             width: 27.5%;
+            border: none;
+
+            .inner-container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                text-align: left;
+            }
         }
     }
-}
-
-h6 {
-    text-align: center;
-    color: #9E9E9E;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 #last {
