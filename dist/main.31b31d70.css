@@ -9566,7 +9566,6 @@ ul {
   margin: 0;
   width: 95%;
   height: 60%;
-  font-size: 1em;
 }
 .desktop-nav .links-container {
   width: 45%;
@@ -9578,10 +9577,10 @@ ul {
 }
 .desktop-nav .links-container .nav-item .nav-link {
   border-right: solid 1px #9E9E9E;
-  margin: 5px 0 5px 0;
+  margin: 5px 0;
   padding: 6px;
   color: #9E9E9E;
-  font-size: 13px;
+  font-size: 12px;
   font-family: "Lato", sans-serif;
 }
 
@@ -9606,11 +9605,14 @@ ul {
   justify-content: flex-start;
   align-items: center;
 }
-.masthead .logo-container .logo-text {
+.masthead .logo-container .logo-text, .masthead .logo-container .logo-caption {
+  font-family: "EB Garamond", serif;
   color: black;
+  letter-spacing: 18px;
 }
 .masthead .logo-container .logo-caption {
-  color: black;
+  font-size: 9px;
+  letter-spacing: 10px;
 }
 .masthead .masthead-container-right {
   width: 27.5%;
@@ -9620,6 +9622,9 @@ ul {
 }
 .masthead .masthead-container-right h5 {
   text-align: center;
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-size: 1em;
 }
 
 main .breaking-news-container {
