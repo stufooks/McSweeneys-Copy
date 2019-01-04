@@ -9733,7 +9733,16 @@ main .container .row .right {
   border: none;
 }
 
-@media only screen and (max-width: 1023px) {
+a:hover, a *:hover {
+  text-decoration: none;
+  color: #1eb1fc;
+}
+
+.breaking-news-container p a:hover {
+  color: #1eb1fc;
+}
+
+@media only screen and (max-width: 991px) {
   .desktop-nav * {
     display: none;
     margin: 0;

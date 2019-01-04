@@ -261,4 +261,13 @@ main {
     border: none;
 }
 
+a:hover, a *:hover {
+    text-decoration: none;
+    color: #1eb1fc;
+}
+
+.breaking-news-container p a:hover {
+    color: #1eb1fc;
+}
+
 @import './mediaquery.scss';
