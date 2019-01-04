@@ -9677,6 +9677,7 @@ main .breaking-news-container p a {
   color: #0091EA;
 }
 main .container {
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -9706,6 +9707,9 @@ main .container .row .middle .deck {
   font-size: 23px;
   margin: 14px;
 }
+main .container .row .right {
+  border-right: none;
+}
 
 #last {
   border: none;
@@ -9714,5 +9718,15 @@ main .container .row .middle .deck {
 @media only screen and (max-width: 1023px) {
   .desktop-nav * {
     display: none;
+  }
+
+  main .column {
+    display: flex;
+    justify-content: center;
+  }
+  main .column .left, main .column .right, main .column .middle {
+    width: 60%;
+    border-bottom: 3px solid #EEEEEE;
+    margin-bottom: 30px;
   }
 }

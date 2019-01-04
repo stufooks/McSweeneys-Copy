@@ -185,6 +185,7 @@ main {
 
 
     .container {
+        width: 100%;
         margin: 0;
         padding: 0;
 
@@ -220,6 +221,10 @@ main {
                     font-size: 23px;
                     margin: 14px;
                 }
+            }
+
+            .right {
+                border-right: none;
             }
         }
     }
