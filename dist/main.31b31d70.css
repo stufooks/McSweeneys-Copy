@@ -9733,3 +9733,9 @@ main .articles-container .right-column-container .inner-container {
 #last {
   border: none;
 }
+
+@media only screen and (max-width: 1023px) {
+  .desktop-nav * {
+    display: none;
+  }
+}
