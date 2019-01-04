@@ -9596,6 +9596,9 @@ span {
   width: 45%;
   margin-right: 27.5%;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .desktop-nav .links-container .nav-item {
   margin: 0;
@@ -9743,7 +9746,7 @@ a:hover, a *:hover {
 }
 
 @media only screen and (max-width: 991px) {
-  .desktop-nav * {
+  .desktop-nav {
     display: none;
     margin: 0;
   }
@@ -9777,11 +9780,14 @@ a:hover, a *:hover {
     display: none;
   }
 
-  main .column {
+  main .breaking-news-container a {
+    font-size: 1.2em;
+  }
+  main .breaking-news-container .column {
     display: flex;
     justify-content: center;
   }
-  main .column .left, main .column .right, main .column .middle {
+  main .breaking-news-container .column .left, main .breaking-news-container .column .right, main .breaking-news-container .column .middle {
     width: 60%;
     border-bottom: 3px solid #EEEEEE;
     margin-bottom: 30px;

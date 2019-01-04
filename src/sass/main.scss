@@ -89,6 +89,9 @@ span {
         width: 45%;
         margin-right: 27.5%;
         height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .nav-item {
             margin: 0;

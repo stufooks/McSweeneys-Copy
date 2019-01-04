@@ -1,8 +1,7 @@
 @media only screen and (max-width: 991px) {
-    .desktop-nav * {
+    .desktop-nav {
         display: none;
         margin: 0;
-
     }
 
     .masthead {
@@ -44,6 +43,11 @@
 
     main {
 
+        .breaking-news-container {
+            a {
+                font-size: 1.2em;
+            }
+
         .column {
             display: flex;
             justify-content: center;
@@ -53,6 +57,7 @@
                 border-bottom: 3px solid #EEEEEE;
                 margin-bottom: 30px;
             }
+        }
         }
     }
   }
