@@ -9745,6 +9745,10 @@ a:hover, a *:hover {
   color: #1eb1fc;
 }
 
+.desktop-nav .links-container .nav-item .nav-link:hover {
+  color: #757575;
+}
+
 @media only screen and (max-width: 991px) {
   .desktop-nav {
     display: none;
