@@ -9515,15 +9515,6 @@ body {
   margin: 0;
 }
 
-.column {
-  padding: 2%;
-  border-right: 1px solid #EEEEEE;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 a {
   color: black;
 }
@@ -9534,6 +9525,11 @@ h6 {
   font-size: 12px;
   letter-spacing: 0.15em;
   margin: 0;
+}
+
+.column {
+  margin: 0;
+  border-right: 1px solid #EEEEEE;
 }
 
 ul {
@@ -9656,6 +9652,10 @@ span {
   font-size: 1em;
 }
 
+main {
+  width: 100%;
+  margin: 0;
+}
 main .breaking-news-container {
   width: 100%;
   background-color: #DEF5F3;
@@ -9676,58 +9676,35 @@ main .breaking-news-container p {
 main .breaking-news-container p a {
   color: #0091EA;
 }
-main .articles-container {
-  display: flex;
+main .container {
+  margin: 0;
+  padding: 0;
 }
-main .articles-container .left-column-container {
-  width: 23.2%;
-}
-main .articles-container .left-column-container .inner-container {
+main .container .row {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  margin: 0;
+  padding: 0;
 }
-main .articles-container .left-column-container .inner-container .head {
+main .container .row h6 {
+  margin-top: 20px;
+}
+main .container .row .left .head {
   font-family: "Playfair Display", serif;
   font-size: 25px;
   font-weight: 600;
 }
-main .articles-container .middle-column-container {
-  width: 53.6%;
-}
-main .articles-container .middle-column-container .inner-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-main .articles-container .middle-column-container .inner-container a {
+main .container .row .middle {
   text-align: center;
 }
-main .articles-container .middle-column-container .inner-container a .head {
+main .container .row .middle .head {
   font-size: 30px;
   letter-spacing: 0.15em;
   line-height: 1.1em;
   margin: 20px;
 }
-main .articles-container .middle-column-container .inner-container a .deck {
+main .container .row .middle .deck {
   font-size: 23px;
   margin: 14px;
-}
-main .articles-container .right-column-container {
-  width: 23.2%;
-  border: none;
-}
-main .articles-container .right-column-container .inner-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  text-align: left;
 }
 
 #last {
