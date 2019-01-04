@@ -1,7 +1,47 @@
 @media only screen and (max-width: 1023px) {
     .desktop-nav * {
         display: none;
+        margin: 0;
+
     }
+
+    .masthead {
+        height: 50px;
+    
+        .masthead-container-left {
+            display: none;
+        }
+
+        .logo-container {
+            width: 100%;
+            margin-top: 6px;
+
+            .logo-text {
+                h1 {
+                    font-size: 1em;
+                    letter-spacing: 5px;
+                }
+            }
+            .logo-caption {
+                .large {
+                    display: none;
+                }
+                .small {
+                    display: block;
+                    font-family: 'EB Garamond', serif;
+                    font-style: italic;
+                    font-size: 1em;
+                    letter-spacing: .1em;
+                    margin-top: -8px;
+                }
+            }
+        }
+
+        .masthead-container-right {
+            display: none;
+        }
+    }
+
     main {
 
         .column {

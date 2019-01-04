@@ -9546,7 +9546,7 @@ ul {
 
 .head {
   font-family: "EB Garamond", serif;
-  font-size: 1em;
+  font-size: 1.1em;
   margin: 8px 8px 8px 0;
   font-weight: 500;
 }
@@ -9639,6 +9639,9 @@ span {
   font-size: 9px;
   letter-spacing: 10px;
 }
+.masthead .logo-container .logo-caption .small {
+  display: none;
+}
 .masthead .masthead-container-right {
   width: 27.5%;
   display: flex;
@@ -9689,7 +9692,7 @@ main .container .row {
 main .container .row h6 {
   margin-top: 20px;
 }
-main .container .row .left .head {
+main .container .row .left .first .head {
   font-family: "Playfair Display", serif;
   font-size: 25px;
   font-weight: 600;
@@ -9697,15 +9700,30 @@ main .container .row .left .head {
 main .container .row .middle {
   text-align: center;
 }
-main .container .row .middle .head {
+main .container .row .middle .first li {
+  padding: 0;
+}
+main .container .row .middle .first .head {
   font-size: 30px;
   letter-spacing: 0.15em;
   line-height: 1.1em;
-  margin: 20px;
+  margin-bottom: 20px;
 }
-main .container .row .middle .deck {
+main .container .row .middle .first .deck {
   font-size: 23px;
   margin: 14px;
+}
+main .container .row .middle .head {
+  font-size: 25px;
+  letter-spacing: 0.15em;
+  line-height: 1.1em;
+}
+main .container .row .middle .byline {
+  font-size: 1.1em;
+}
+main .container .row .middle li {
+  margin: 20px 0;
+  padding: 20px 0;
 }
 main .container .row .right {
   border-right: none;
@@ -9717,6 +9735,36 @@ main .container .row .right {
 
 @media only screen and (max-width: 1023px) {
   .desktop-nav * {
+    display: none;
+    margin: 0;
+  }
+
+  .masthead {
+    height: 50px;
+  }
+  .masthead .masthead-container-left {
+    display: none;
+  }
+  .masthead .logo-container {
+    width: 100%;
+    margin-top: 6px;
+  }
+  .masthead .logo-container .logo-text h1 {
+    font-size: 1em;
+    letter-spacing: 5px;
+  }
+  .masthead .logo-container .logo-caption .large {
+    display: none;
+  }
+  .masthead .logo-container .logo-caption .small {
+    display: block;
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    margin-top: -8px;
+  }
+  .masthead .masthead-container-right {
     display: none;
   }
 

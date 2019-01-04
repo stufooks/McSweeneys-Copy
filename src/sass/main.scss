@@ -35,7 +35,7 @@ ul {
 
 .head {
     font-family: 'EB Garamond', serif;
-    font-size: 1em;
+    font-size: 1.1em;
     margin: 8px 8px 8px 0;
     font-weight: 500;
 }
@@ -137,6 +137,10 @@ span {
         .logo-caption {
             font-size: 9px;
             letter-spacing: 10px;
+
+            .small {
+                display: none;
+            }
         }
     }
 
@@ -200,26 +204,49 @@ main {
 
             .left {
 
-                .head {
-                    font-family: 'Playfair Display', serif;
-                    font-size: 25px;
-                    font-weight: 600;
+                .first {
+
+                    .head {
+                        font-family: 'Playfair Display', serif;
+                        font-size: 25px;
+                        font-weight: 600;
+                    }
                 }
             }
 
             .middle {
                 text-align: center;
 
-                .head {
-                    font-size: 30px;
+                .first {
+                    li {
+                        padding: 0;
+                    }
+
+                    .head {
+                        font-size: 30px;
                         letter-spacing: .15em;
                         line-height: 1.1em;
-                        margin: 20px;
+                        margin-bottom: 20px;
+                    }
+
+                    .deck {
+                        font-size: 23px;
+                        margin: 14px;
+                    }
+                }
+                .head {
+                    font-size: 25px;
+                    letter-spacing: .15em;
+                    line-height: 1.1em;
                 }
 
-                .deck {
-                    font-size: 23px;
-                    margin: 14px;
+                .byline {
+                    font-size: 1.1em;
+                }
+
+                li {
+                    margin: 20px 0;
+                    padding: 20px 0;
                 }
             }
 
