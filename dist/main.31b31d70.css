@@ -9588,6 +9588,7 @@ span {
   height: 100%;
 }
 .desktop-nav .search-container .navbar .form-inline .form-control {
+  font-size: 0.9em;
   margin: 0;
   width: 95%;
   height: 60%;
